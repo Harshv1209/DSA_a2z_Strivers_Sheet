@@ -1,0 +1,23 @@
+//Coding Question:-https://www.codingninjas.com/studio/problems/sum-of-even-odd_624650?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1
+//Solution:-
+#include<iostream>
+using namespace std;
+
+int main() {
+	int n;
+	cin>>n;
+	int i=0;
+	int even=0;
+    int odd=0;
+	while(n){
+		
+       int digit=n%10;
+	   if(digit%2==0) even=even+digit;
+	   else odd=odd+digit;
+	    n=n/10;
+	   i++;
+
+	}
+	cout<<even<<" "<<odd;
+	
+}
