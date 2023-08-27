@@ -1,0 +1,18 @@
+// CODING QUESTION:-https://www.codingninjas.com/studio/problems/data-type_8357232?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
+// SOLUTION:-
+int dataTypes(string type) {
+	
+	 if(type=="Long") return 8;
+
+ 
+
+    else if( type=="Double") return 8;
+
+ 
+
+    else if(type=="Character") return 1;
+
+ 
+
+    else return 4;
+}
