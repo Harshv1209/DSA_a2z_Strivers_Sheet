@@ -1,0 +1,34 @@
+coding question:-https://www.codingninjas.com/studio/problems/symmetric-void_6581919?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=SUBMISSION
+solution:-
+
+void symmetry(int n) {
+    // Write your code here.
+    int space=0;
+    for(int i=0;i<n;i++){
+        for(int j=1;j<=n-i;j++){
+            cout<<"* ";
+        }
+        for(int j=1;j<=space;j++){
+            cout<<" ";
+        }
+         for(int j=1;j<=n-i;j++){
+            cout<<"* ";
+        }
+       space+=4;
+        cout<<endl;
+    }
+    int space2= n*4;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            cout<<"* ";
+        }
+        for(int j=space2;j>=0;j--){
+            cout<<" ";
+        }
+         for(int j=0;j<=i;j++){
+            cout<<"* ";
+        }
+        space2-=4;
+        cout<<endl;
+    }
+}
