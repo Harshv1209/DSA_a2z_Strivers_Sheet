@@ -1,0 +1,35 @@
+coding question:-https://www.codingninjas.com/studio/problems/symmetry_6581914?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems&leftPanelTabValue=PROBLEM
+solution:-
+
+void symmetry(int n) {
+    
+        int space1 = (n - 1) * 2;
+    int space2 = 0;
+
+        for (int i = 0; i < n; i++) {
+        for (int j = 0; j <= i; j++) {
+            cout << "* ";
+        }
+        for (int j = 0; j < space1; j++) {
+            cout << " ";
+        }
+        for (int j = 0; j <= i; j++) {
+            cout << "* ";
+        }
+        space1 -= 2;
+        cout << endl;
+    }
+  for (int i = n - 1; i >= 0; i--) {
+        for (int j = 0; j < i; j++) {
+            cout << "* ";
+        }
+        for (int j = 1; j <= space2; j++) {
+            cout << " ";
+        }
+        for (int j = 0; j < i; j++) {
+            cout << "* ";
+        }
+        space2 += 2;
+        cout << endl;
+    }
+}
