@@ -1,0 +1,16 @@
+coding ninjas:-https://www.codingninjas.com/studio/problems/palindrome-number_624662?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+solution:-
+
+bool palindrome(int n)
+{
+    int dig=0;
+    int current=n;
+    while(current>0){
+        int ans= current%10;
+        int dig=dig*10+ans;
+        current/=10;
+    }
+    if(current == dig) return true;
+    else return false;
+}
