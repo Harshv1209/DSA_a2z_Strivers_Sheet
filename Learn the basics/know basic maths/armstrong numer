@@ -1,0 +1,16 @@
+coding question:-https://www.codingninjas.com/studio/problems/check-armstrong_589?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+solution:-
+
+bool checkArmstrong(int n){
+	int dup=n;
+	string str=to_string(n);
+	int len=str.length();
+	int sum=0;
+	while(n>0){
+		int dig=n%10;
+		sum=sum+pow(dig,len);
+		n/=10;
+	}
+	if(dup == sum) return true;
+	else return false;
+}
