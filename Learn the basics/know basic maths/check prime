@@ -1,0 +1,15 @@
+coding question:-https://www.codingninjas.com/studio/problems/check-prime_624934?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+solution:-
+
+bool isPrime(int n)
+{
+	// Write your code here.
+	int count=0;
+	for(int i=2;i<=n;i++){
+          if (n % i == 0) {
+            count++;
+          }
+    }
+	if(count == 1) return true;
+	else return false;
+}
