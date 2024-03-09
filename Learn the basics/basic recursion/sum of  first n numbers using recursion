@@ -1,0 +1,8 @@
+coding question:-https://www.codingninjas.com/studio/problems/sum-of-first-n-numbers_8876068?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+solution:-
+
+long long sumFirstN(long long n) {
+    // Write your code here.
+    if(n==0) return 0;
+    return n+sumFirstN(n-1);
+}
