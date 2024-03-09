@@ -1,0 +1,10 @@
+coding question:-https://www.codingninjas.com/studio/problems/-print-n-times_8380707?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+solution:-
+
+
+vector<string> printNTimes(int n) {
+	// Write your code here.
+	if(n==0) return vector<string>();
+	cout<<"Coding Ninjas ";
+	return printNTimes(n-1);
+}
