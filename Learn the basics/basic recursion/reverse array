@@ -1,0 +1,38 @@
+coding question:-https://www.codingninjas.com/studio/problems/reverse-an-array_8365444?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+1st approach:-
+/*
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+    where n is the size of the input array.
+*/
+
+// Function to reverse the elements of the given array 'arr'.
+vector<int> reverseArray(int n, vector<int> &nums)
+{
+    // Initialize two pointers, left and right,
+    // pointing to the first and last indices of the array, respectively.
+    int left = 0, right = n - 1;
+
+    // Iterate until left crosses right.
+    while (left < right)
+    {
+        // Swap the elements at positions left and right.
+        swap(nums[left], nums[right]);
+
+        // Move left one step forward.
+        left++;
+
+        // Move right one step backward.
+        right--;
+    }
+
+    // Returning the reversed array.
+    return nums;
+}
+
+//optimal approach
+vector<int> reverseArray(int n, vector<int> &nums)
+{
+ reverse(nums.begin(), nums.end());
+ return nums;
+}
