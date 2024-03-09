@@ -1,0 +1,10 @@
+coding question:-https://www.codingninjas.com/studio/problems/n-to-1-without-loop_8357243?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+solution:-
+
+vector<int> printNos(int x) {
+    
+    if (x==0)return vector<int>();
+    cout << x << " ";
+    printNos(x - 1);
+    return vector<int>();
+}
