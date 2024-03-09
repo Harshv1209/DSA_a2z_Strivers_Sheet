@@ -1,0 +1,19 @@
+coding question:-https://www.codingninjas.com/studio/problems/print-1-to-n_628290?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+
+
+solution:-
+
+vector<int> printNos(int x) {
+   vector<int> result;
+    
+    if(x == 0) {
+        return result;
+    }
+    
+    result = printNos(x - 1);
+    result.push_back(x);
+    
+    return result;
+
+    
+}
