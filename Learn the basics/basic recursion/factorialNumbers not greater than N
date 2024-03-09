@@ -1,0 +1,17 @@
+coding question:-https://www.codingninjas.com/studio/problems/factorial-numbers-not-greater-than-n_8365435?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+solution:-
+
+vector<long long> factorialNumbers(long long n) {
+   long long factNums = 1;
+    vector<long long> fact;
+
+    for (long long i = 1; factNums <= n; ++i) {
+      
+        factNums *= i;
+        if (factNums <= n)
+            fact.push_back(factNums);
+    }
+
+    return fact;
+
+}
