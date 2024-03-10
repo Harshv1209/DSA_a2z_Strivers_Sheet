@@ -24,3 +24,24 @@ public:
       return true;  
     }
 };
+
+
+//coding question:-https://www.codingninjas.com/studio/problems/check-palindrome-recursive_624386?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+solution:-
+
+//recursive approach 
+
+bool isPalindrome(string& str, int left, int right) {
+    if (left >= right) 
+        return true;
+    
+    if (str[left] != str[right])
+        return false;
+
+    return isPalindrome(str, left + 1, right - 1);
+}
+
+bool isPalindrome(string& str) {
+    int n = str.size();
+    return isPalindrome(str, 0, n - 1);
+}
