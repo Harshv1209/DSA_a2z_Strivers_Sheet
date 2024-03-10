@@ -1,20 +1,11 @@
 coding question:-https://www.codingninjas.com/studio/problems/count-frequency-in-a-range_8365446?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 
 solution:-
-  
-  
-  vector<int> countFrequency(int n, int x, vector<int> &nums){
-       vector<int> ans(n, 0);
+ vector<int> countFrequency(int n, int x, vector<int> &nums){
+     vector<int> s(n,0);
 
-    for (int num : nums)
-    {
-        
-        if (num <= x)
-        {
-            
-            ans[num - 1]++;
-        }
-    }
-
-    return ans;
+     for(auto it:nums){
+         s[it -  1]++;
+     }
+     return s;
 }
