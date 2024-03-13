@@ -1,0 +1,16 @@
+question:-https://leetcode.com/problems/missing-number/submissions/1202482306/
+solution:-#include <vector>
+
+class Solution {
+public:
+    int missingNumber(std::vector<int>& nums) {
+        int n = nums.size();
+        int s1 = (n * (n + 1)) / 2; // Sum of all numbers from 0 to n
+        int s2 = 0;
+        for (int i = 0; i < n; i++) {
+            s2 += nums[i]; // Sum of all numbers in nums
+        }
+        int result = s1 - s2;
+        return result;
+    }
+};
