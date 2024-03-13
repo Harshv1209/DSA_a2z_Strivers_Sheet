@@ -1,0 +1,14 @@
+question:-https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+solution:-vector<int> rotateArray(vector<int> arr, int k) {
+    int n = arr.size();
+    k = k % n; // Adjust k to be within the range of array size
+    
+    // Reverse the entire array
+    reverse(arr.begin(), arr.end());
+    // Reverse the first n-k elements
+    reverse(arr.begin(), arr.begin() + (n - k));
+    // Reverse the remaining elements
+    reverse(arr.begin() + (n - k), arr.end());
+    
+    return arr;
+}
