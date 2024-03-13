@@ -1,0 +1,45 @@
+question:-https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+solution:-
+
+
+
+// Function prototypes
+int secondLargest(vector<int> a, int n);
+int secondSmallest(vector<int> a, int n);
+
+// Function to get second-order elements
+vector<int> getSecondOrderElements(int n, vector<int> arr) {
+    int sLargest = secondLargest(arr, n);
+    int sSmallest = secondSmallest(arr, n);
+    return {sLargest, sSmallest};
+}
+
+// Function to find the second largest element in an array
+int secondLargest(vector<int> a, int n) {
+    int largest = a[0];
+    int sLargest = -1;
+    for (int i = 1; i < n; i++) {
+        if (a[i] > largest) {
+            sLargest = largest;
+            largest = a[i];
+        } else if (a[i] < largest && a[i] > sLargest) {
+            sLargest = a[i];
+        }
+    }
+    return sLargest;
+}
+
+// Function to find the second smallest element in an array
+int secondSmallest(vector<int> a, int n) {
+    int smallest = a[0];
+    int sSmallest = INT_MAX;
+    for (int i = 1; i < n; i++) {
+        if (a[i] < smallest) {
+            sSmallest = smallest;
+            smallest = a[i];
+        } else if (a[i] > smallest && a[i] < sSmallest) {
+            sSmallest = a[i];
+        }
+    }
+    return sSmallest;
+}
