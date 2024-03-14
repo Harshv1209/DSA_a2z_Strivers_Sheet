@@ -2,7 +2,7 @@ question:-https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-chec
   solution:-
   
   int isSorted(int n, vector<int> a) {
-    // Write your code here.
+    
     int min=a[0];
     for(int i=1;i<n;i++){
         if(a[i]>=a[i-1]){}
