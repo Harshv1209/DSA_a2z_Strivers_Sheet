@@ -3,7 +3,7 @@ solution:-#include <vector>
 
 class Solution {
 public:
-    int missingNumber(std::vector<int>& nums) {
+    int missingNumber(vector<int>& nums) {
         int n = nums.size();
         int s1 = (n * (n + 1)) / 2; // Sum of all numbers from 0 to n
         int s2 = 0;
