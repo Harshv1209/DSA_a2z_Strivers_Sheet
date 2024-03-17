@@ -12,7 +12,7 @@ solution:-
 vector<int> getFrequencies(vector<int>& v) {
     
     // Declare a variable 'n' which is equal to the size 
-    // of array 'v'.
+   
     int n = v.size();
     
     // Declare a unordered map 'freq'
