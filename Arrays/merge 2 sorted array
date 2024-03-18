@@ -4,7 +4,7 @@ solution:-
 #include <vector>
 #include <algorithm>
 
-std::vector<int> sortedArray(std::vector<int> a, std::vector<int> b) {
+vector<int> sortedArray(std::vector<int> a, vector<int> b) {
     int n1 = a.size();
     int n2 = b.size();
     int i = 0, j = 0;
