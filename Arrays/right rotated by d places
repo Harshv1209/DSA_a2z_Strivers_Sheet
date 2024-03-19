@@ -10,7 +10,7 @@ public:
         // Reverse the first k elements
         reverse(nums.begin(), nums.begin() + k);
         
-        // Reverse the rest of the elements after k
+        // Reverse the rest of elements after k
         reverse(nums.begin() + k, nums.end());
 
     }
