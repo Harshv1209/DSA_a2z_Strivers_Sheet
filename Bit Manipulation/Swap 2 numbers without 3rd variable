@@ -1,0 +1,8 @@
+    int main() {
+   int a,b;
+    cin>>a>>b;
+        a = a ^ b; // Step 1
+    b = a ^ b; // Step 2
+    a = a ^ b; // Step 3
+    cout<<a<< " "<<b;
+}
