@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, k;
+    cin >> num >> k;
+    int mask = 1 << k;
+    cout << (num ^ mask);
+    return 0;
+}
